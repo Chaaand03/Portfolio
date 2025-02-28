@@ -2153,13 +2153,23 @@ input, select, textarea {
 		text-align: center;
 	}
 
+	.light-header{
+		color: #272833;
+	}
+
 	header p {
 		color: #ffffff;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
 
+	header h2{
+		color: #e44c65;
+		font-size: 2em;
+	}
+
 	header h2 + p {
+		color: #eec3ca;
 		font-size: 1.25em;
 		margin-top: -1em;
 		line-height: 1.75em;
@@ -2416,6 +2426,8 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		color: #e44c65;
+		transition: color 0.3s ease-in-out;
 	}
 
 		.icon:before {
@@ -2429,6 +2441,10 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+		}
+
+		.icon:hover:after {
+			color: #272833 !important; /* Change color on hover */
 		}
 
 		.icon > .label {
@@ -2465,7 +2481,8 @@ input, select, textarea {
 			}
 
 			.icon.alt:before {
-				color: #1c1d26 !important;
+				/* color: #1c1d26 !important; */
+				color: #e44c65;
 				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 			}
 
@@ -2485,6 +2502,10 @@ input, select, textarea {
 				font-size: 2.25em;
 			}
 
+			.icon.major:hover:before {
+				color: #272833 !important; /* Change color on hover */
+			}
+
 			.icon.major.alt {
 				text-decoration: none;
 			}
@@ -2502,8 +2523,8 @@ input, select, textarea {
 					font-weight: 400;
 				}
 
-				.icon.major.alt:before {
-					color: #272833 !important;
+				.icon.major.alt:after {
+					color: #e44c65 !important;
 					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 				}
 
@@ -2538,12 +2559,18 @@ input, select, textarea {
 			float: left;
 			margin: 0 1.5em 1em 0;
 			top: 0.25em;
+			/* width: 400px;
+    		height: 190px;  */
+			object-fit: cover;
 		}
 
 		.image.right {
 			float: right;
 			margin: 0 0 1em 1.5em;
 			top: 0.25em;
+			/* width: 400px; 
+   	 		height: 240px;  */
+			object-fit: cover;
 		}
 
 		.image.left, .image.right {
@@ -2555,7 +2582,7 @@ input, select, textarea {
 			}
 
 		.image.fit {
-			display: block;
+			display:flex;
 			margin: 0 0 2em 0;
 			width: 100%;
 		}
@@ -3202,6 +3229,7 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background: #e44c65;
+			color: #272833;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3460,6 +3488,9 @@ input, select, textarea {
 		position: relative;
 		text-align: center;
 		z-index: 21;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 		#banner:before {
@@ -3486,8 +3517,7 @@ input, select, textarea {
 
 		#banner .content {
 			display: inline-block;
-			margin-right: 1%;
-			max-width: 95%;
+			margin-right: 3%;
 			padding: 6em;
 			position: relative;
 			text-align: right;
@@ -3501,13 +3531,27 @@ input, select, textarea {
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
+					font-size: 3em; /* Increase size for emphasis */
+					font-family: 'Poppins', sans-serif; /* Use a sleek, modern font */
+					font-weight: 800; /* Make it bold */
+					letter-spacing: 2px; /* Slight spacing for elegance */
+					text-transform: uppercase; /* Gives a strong presence */
+					color: #e44c65; /* Matches the theme with a vibrant color */
 					margin: 0;
+					text-shadow: 3px 3px 7px #ff002b;
+					transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+				}
+
+				#banner .content header h2:hover {
+					color: #d799a3; /* Brighter Red on Hover */
+					text-shadow: 0px 0px 20px #ff002b, 0px 0px 30px rgba(255, 0, 43, 0.7);
+					transform: scale(1.05); /* Slight scaling for emphasis */
 				}
 
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
 					top: 0;
+					color: #e2b9c0;
 				}
 
 			#banner .content .image {

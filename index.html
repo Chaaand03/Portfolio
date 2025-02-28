@@ -20,8 +20,8 @@
 					<h1 id="logo"><a href="index.html">Home</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Projects</a></li>
-							<li>
+							<li><a href="#three">Projects</a></li>
+							<!-- <li>
 								<a href="#">Layouts</a>
 								<ul>
 									<li><a href="left-sidebar.html">Left Sidebar</a></li>
@@ -37,9 +37,8 @@
 										</ul>
 									</li>
 								</ul>
-							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							</li> -->
+							<li><a href="#four">Contact</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -68,11 +67,11 @@
 								<div class="col-4 col-12-medium">
 									<header>
 										<h2>My educational background</h2>
-										<p>the foundation of my expertise and professional growth</p>
+										<p>The foundation of my expertise and professional growth</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
-									<h3 style="margin-bottom: 4rem;">North Carolina State University</h3>
+									<h3>North Carolina State University</h3>
 									<p>Master of Computer Science</p>
 								</div>
 								<div class="col-4 col-12-medium">
@@ -87,39 +86,30 @@
 
 
 			<!-- Work Experience -->
-			<section id="one" class="style1 bottom">
+
+			<section id="two" class="spotlight style1 bottom">
 				<span class="image fit main"><img src="images/bg01.jpg" alt="" /></span>
 				<div class="content">
 					<div class="container">
-			
-						<section>
-						<h2>Delve into my professional journey, where each role has shaped my skills, expertise, and commitment to
-							excellence</h2>
-						<p>
-							<span class="image left"><img src="images/Signify.png" alt="" /></span>
-						<h3>Development Engineer Intern</h3>
-						<h6>Signify Innovations, Bangalore, India</h6>
-						Spearheaded development of new filter and category settings features in the Interact Retail web app using
-						AngularJS, including an easy registration system for the “Smart Store Lighting Solution” used by over 2,000
-						customers. Drove 20% increase in customer satisfaction scores for the same by rapidly integrating
-						user-requested capabilities. </br>
-						Boosted team velocity by 15% and reduced defect rate by 30% through agile delivery expertise with Scrum and
-						Jira within a 25-member development team.
-						</p>
-						<p>
-							<span class="image right"><img src="images/desiCloud.png" alt="" /></span>
-						<h3>Software developer Intern</h3>
-						<h6>desiCloud - SJCE-STEP, Mysore, India</h6>
-						Actively contributed to the development of the desiCloud application by designing and implementing new
-						features using a tech stack that included PHP, JavaScript, and SQL. </br>
-						Boosted code efficiency by 25% through performance audits and optimization of bottlenecks in collaboration.
-						Identified and fixed over 50 defects, reducing platform crashes by 8%, positively impacting over 1,000
-						active users.
-						</p>
-						</section>
+						<div class="row">
+							<div class="col-4 col-12-medium">
+								<header>
+									<h2>My Professional Journey</h2>
+									<p>Where each role has shaped my skills, expertise, and commitment to excellence.</p>
+								</header>
+							</div>
+							<div class="col-4 col-12-medium">
+								<h3>Development Engineer</h3>
+								<p>Philips Lighting</p>
+							</div>
+							<div class="col-4 col-12-medium">
+								<h3>Software developer Intern</h3>
+								<p>desiCloud</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			
+				<a href="#three" class="goto-next scrolly">Next</a>
 			</section>
 
 			<!-- Two -->
@@ -154,62 +144,75 @@
 					<a href="#four" class="goto-next scrolly">Next</a>
 				</section> -->
 
-			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+			<!-- Projects -->
+				<section id="three" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>My Projects</h2>
+							<p>Playground of my projects, where ideas come to life, innovation thrives, and solutions pave the way for progress</p>
 						</header>
 						<div class="box alt">
-							<div class="row gtr-uniform">
+							<div class="row">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="https://github.com/Chaaand03/howl_of_hope"><span class="icon solid alt major fa-laptop-code"></span></a>
+									<h3>Howl of Hope</h3>
+									<h5>HackNCState 2025 – 2nd Place Winner</h5>
+									<p>Developed a full-stack web application (React, Express.js, MongoDB) for students to anonymously share food resources, integrating Firebase authentication (SSO) and an AI-powered chatbot (LangChain, RAG) for real-time food availability guidance.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="https://colab.research.google.com/drive/1XORbssUkLRdrsCh0UvZ70LSL3KRGaKYG"><span class="icon solid alt major fa-chart-line"></span></a>
+									<h3>Efficient Vehicle Plate Recognition using LPRNET</h3>
+									<p>Developed and optimized an end-to-end CNN model (LPRNet) using PyTorch, ONNX, and TVM for real-time license plate recognition, achieving 90.10% accuracy with dynamic quantization and reducing inference time by 60% through fusion, pruning, and MLC optimizations. Leveraged OpenCV, NumPy and DynamoDB for data processing, and utilized CUDA for GPU acceleration, compressing the model size by 0.35%.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="https://github.com/Chaaand03/Adaptive-Tic-Tac-Toe"><span class="icon solid alt major fa-laptop-code"></span></a>
+									<h3>Adaptive Tic-Tac-Toe</h3>
+									<h5>DiamondHacks 2024 - Winner in "Best use of AI in education"</h5>
+									<p>Built an interactive gamified educational tool (ReactJS, Taipy, Flask, OpenAI API) with dynamic difficulty scaling and question-based move validation, enhancing UI/UX design and learning engagement. Implemented a RAG agent to analyze the user given text to form questions and on and build the difficulty level and store the information in MongoDB for future use too.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="https://github.ncsu.edu/cmallu/rail-ticketing-system"> <span class="icon solid alt major fa-laptop-code"></span></a>
+									<h3>Rail Ticketing System</h3>
+									<p>Built a web-based train ticketing system (Ruby on Rails) with role-based access control, MVC architecture, and an optimized UI, enhancing security and user experience.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="https://github.com/Chaaand03/slash"><span class="icon solid alt major fa-laptop-code"></span></a>
+									<h3>Slash - Web and Mobile app</h3>
+									<p>Developed an AI-powered web scraping pipeline using Python, Flask and multi-threading to aggregate e-commerce deals in real-time, reducing data retrieval time by 4x. Implemented Firebase authentication and NLP-based search optimization with NLTK improving recommendation accuracy and user engagement across Web and Android platforms.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-lock"></span>
-									<h3>Massa arcu accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<a href="https://github.com/Chaaand03/Simplii"> <span class="icon solid alt major fa-laptop-code"></span></a>
+									<h3>Simplii: AI-Powered Task Manager</h3>
+									<p>Developed a task scheduling web & mobile app (Flask, MongoDB, Firebase, Android Studio) with Kanban board, email reminders, and a Chrome extension for seamless task management. Integrated LLM-powered Smart Assistant for automated task addition based on user queries. Created Postman API documentation for each GraphQL query used to retrieve data.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<a href="https://github.ncsu.edu/cmallu/csc-591-robotics-bad-branches"><span class="icon solid alt major fa-chart-line"></span></a>
+									<h3>Branch Quality Dashboard for ROS Repositories</h3>
+									<p>Engineered an AI-driven analytics pipeline using LangChain, LangRack, GraphQL, and DynamoDB to automate data extraction, classification, and branch quality assessment in ROS repositories. Analyzed data with pandas and NumPy, and visualized insights using matplotlib for actionable results.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<a href="https://github.ncsu.edu/cmallu/Gitlab_query"> <span class="icon solid alt major fa-chart-line"></span></a>
+									<h3>GitLab Repository Analytics Dashboard</h3>
+									<p>Built customized GraphQL queries and integrated APIs to retrieve and analyze repository data from GitLab as part of an open-source contribution. Designed a front-end UI with React, Vite and Flask for backend data processing and matplotlib for visualizations.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<a href="https://github.com/Chaaand03/NNDL_proj"> <span class="icon solid alt major fa-chart-line"></span></a>
+									<h3>Lactate Concentration Prediction Model</h3>
+									<p>Built a deep learning model with moving average noise reduction and a 3-layer neural network (ReLU activation) to predict lactate concentration from electrochemical sensor data.</p>
 								</section>
 							</div>
 						</div>
-						<footer class="major">
-							<ul class="actions special">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
-							</ul>
-						</footer>
 					</div>
+					<a href="#four" class="goto-next scrolly">Next</a>
 				</section>
 
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+			<!-- Contact -->
+				<section id="four" class="wrapper style2 special fade">
 					<div class="container">
-						<header>
-							<h2>Magna faucibus lorem diam</h2>
+						<div class="light-header">
+							<h2 style="color:#272833">Magna faucibus lorem diam</h2>
 							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
-						</header>
+						</div>
 						<form method="post" action="#" class="cta">
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
@@ -222,15 +225,12 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="https://www.linkedin.com/in/chandana-mallu-950399207/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/Chaaand03" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="chandanamallu03@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; ChandanaMallu03. All rights reserved.</li>
 					</ul>
 				</footer>
 
