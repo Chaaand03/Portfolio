@@ -2443,10 +2443,6 @@ input, select, textarea {
 			font-weight: 400;
 		}
 
-		.icon:hover:after {
-			color: #272833 !important; /* Change color on hover */
-		}
-
 		.icon > .label {
 			display: none;
 		}
@@ -2503,7 +2499,7 @@ input, select, textarea {
 			}
 
 			.icon.major:hover:before {
-				color: #272833 !important; /* Change color on hover */
+				color: #ffffff !important; /* Change color on hover */
 			}
 
 			.icon.major.alt {
@@ -3228,7 +3224,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: #ed8597;
 			color: #272833;
 		}
 
@@ -4153,3 +4149,238 @@ input, select, textarea {
 					}
 
 	}
+
+/* Grid */
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(280px, 1fr));
+		/* grid-template-columns: repeat(2, 1fr); */
+		gap: 1.5rem;
+		justify-content: center; 
+		align-items: center; 
+		margin-top: 2rem;
+		width: 100%;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.skill-box {
+		background: linear-gradient(135deg, #272833, #1c1d26);
+		color: white;
+		width: 250px; 
+		height: 250px; 	
+		padding: 2rem;
+		border-radius: 10px;
+		text-align: center;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.skill-box i {
+		font-size: 2.5rem;
+		color: #ffcc00;
+		margin-bottom: 1rem;
+		transition: color 0.3s ease-in-out;
+	}
+	
+	.skill-box h3 {
+		font-size: 1.3rem;
+		margin-bottom: 0.5rem;
+		font-weight: bold;
+		color: #ffcc00;
+	}
+	
+	.skill-box p {
+		font-size: 1rem;
+		opacity: 0.9;
+	}
+	
+	/* Hover Effects */
+	.skill-box:hover {
+		transform: scale(1.05);
+		box-shadow: 0px 8px 20px rgba(255, 204, 0, 0.7);
+	}
+	
+	.skill-box:hover i {
+		color: #e44c65;
+	}
+	
+	/* Responsive Design */
+	@media screen and (max-width: 768px) {
+		.skills-grid {
+			grid-template-columns: 1fr; /* 1 column layout for smaller screens */
+			max-width: 320px; 
+		}
+
+		.skill-box {
+			width: 250px;
+			height: 250px;
+			margin-left: 2em;
+		}
+	}
+
+/* Project cards*/
+
+.projects-section {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #1b1c25;
+    color: white;
+}
+
+/* Horizontal Scrolling Wrapper */
+.projects-wrapper {
+    overflow-x: auto;
+    padding: 1rem 0;
+    white-space: nowrap;
+}
+
+.projects-scroll {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 10px;
+    width: max-content; /* Prevents wrapping */
+}
+
+/* Hide Scrollbar (Optional) */
+.projects-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-wrapper::-webkit-scrollbar-track {
+    background: #1b1c25;
+}
+
+.projects-wrapper::-webkit-scrollbar-thumb {
+    background: #ffcc00;
+    border-radius: 10px;
+}
+
+.project-card {
+    width: 280px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Card Front & Back */
+.project-front, .project-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Front Side */
+.project-front {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    transform: rotateY(0deg);
+}
+
+.project-front i {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+}
+
+.project-front h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Back Side */
+.project-back {
+    background: rgba(228, 76, 101, 0.9);
+    transform: rotateY(180deg);
+    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.5);
+    text-align: center;
+    overflow: hidden;
+}
+
+.project-back h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.project-back p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    max-height: 70px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px 12px;
+    background: #ffcc00;
+    color: #1b1c25;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.project-link:hover {
+    background: white;
+}
+
+/* Flip Effect */
+.project-card:hover .project-front {
+    transform: rotateY(180deg);
+}
+
+.project-card:hover .project-back {
+    transform: rotateY(360deg);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .projects-scroll {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .project-card {
+        width: 220px;
+        height: 230px;
+    }
+
+    .project-front i {
+        font-size: 2rem;
+    }
+
+    .project-back h3 {
+        font-size: 1rem;
+    }
+
+    .project-back p {
+        font-size: 0.8rem;
+    }
+}
+
+	
+	
