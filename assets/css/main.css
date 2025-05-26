@@ -3395,6 +3395,7 @@ input, select, textarea {
 
 	#page-wrapper {
 		padding-top: 3.5em;
+		background-color: #181920;
 	}
 
 	#header {
@@ -3420,7 +3421,8 @@ input, select, textarea {
 		}
 
 		#header nav {
-			position: absolute;
+			position: fixed;
+			display: flex;
 			right: 1em;
 			top: 0;
 		}
